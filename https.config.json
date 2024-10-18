@@ -1,0 +1,6 @@
+{
+  "https": {
+    "cert": "cert/localhost.crt",
+    "key": "cert/localhost.key"
+  }
+}

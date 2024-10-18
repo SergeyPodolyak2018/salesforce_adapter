@@ -1,0 +1,62 @@
+{
+	"author": {
+		"name": "Genesys Cloud",
+		"email": "customercare@genesys.com"
+	},
+
+	"parameters": [
+        {
+            "name": "crm_height",
+			"type": "number",
+			"required": true,
+            "default":"500"
+        },
+        {
+            "name": "crm_width",
+			"type": "number",
+			"required": true,
+            "default":"600"
+        },
+		{
+
+			"name": "cti_url", "type": "url", "required": true,
+			"default":"https://localhost:1443/ui/crm-workspace/index.html?crm=zendesk"
+		},
+
+		{
+			"name":"auto_create_ticket", "type":"checkbox", "required":false,
+			"default":false
+		},
+		{
+			"name":"search_customer", "type":"checkbox", "required":false,
+			"default":true
+		},
+		{
+			"name":"search_ticket", "type":"checkbox", "required":false,
+			"default":true
+		},
+		{
+			"name":"search_organization", "type":"checkbox", "required":false,
+			"default":false
+		},
+		{
+			"name":"ticket_phone_id", "type":"text", "required":false,
+			"default":"26467841,26485552"
+		},
+		{
+			"name":"perm_cti_panel", "type":"text", "required":false,
+			"default":"admin,agent"
+		},
+		{
+			"name":"disable_call_activity", "type":"checkbox", "required":false,
+			"default":false
+		}
+	],
+
+	"location": ["top_bar","user_sidebar","ticket_sidebar"],
+	"defaultLocale": "en",
+	"private": true,
+	"singleInstall": true,
+	"frameworkVersion": "1.0",
+	"appVersion": "1.0.8"
+}

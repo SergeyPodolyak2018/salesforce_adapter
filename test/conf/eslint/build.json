@@ -1,0 +1,22 @@
+{
+    "rules": {
+        "no-extra-semi": 2,
+        "no-func-assign": 2,
+        "no-irregular-whitespace": 2,
+        "no-else-return": 0,
+        "no-return-assign": 2,
+        "no-self-compare": 2,
+        "no-cond-assign": 2,
+        "no-debugger": 2,
+        "no-constant-condition": 2,
+        "valid-typeof": 2,
+        "no-delete-var": 2,
+        "no-unused-vars": 2,
+        "quotes": [2, "single"],
+        "comma-style": [2, "last"],
+        "comma-dangle": [2, "never"]
+    },
+    "meta": {
+        "link": "http://eslint.org/docs/"
+    }
+}

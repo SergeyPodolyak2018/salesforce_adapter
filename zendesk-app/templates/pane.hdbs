@@ -1,0 +1,27 @@
+<div id="divCtiPanel" class="div-cti-panel">
+	<p style='float:left;'>{{desc}}</p>
+  <a id='lnkResult' href="#" class="lnk-gen-result">
+    <img id="imgSearch" src="{{arrowDownUrl}}" class="img-gen-search" />
+  </a>
+  <table class="cti-table">
+    <tr>
+      <td>
+        <div id="div1" class="div1-gen-cti-table">
+          {{iframe adapterUrl}}
+        </div>
+        <div id="div2" class="div2-gen-cti-table">
+            <nav id="screenpop_nav" class="navigationbar"></nav>
+            <div id="screenpop_results" class="tab-content"></div>
+        </div>
+
+      </td>
+    </tr>
+  </table>
+
+  <div class="div-lnk">
+    <a href="/agent/#/apps/genesys-cloud-cti" class="lnk-search-page" id="lnkSearchPage">Link1</a>
+    <a href="" class="lnk-search-single" id="lnkSearchSingle">Link2</a>
+  </div>
+  <a href="#" target="_blank" rel="nofollow" id="externalLink" class="lnk-external">Click</a>
+</div>
+

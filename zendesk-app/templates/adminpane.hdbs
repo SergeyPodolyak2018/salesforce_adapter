@@ -1,0 +1,62 @@
+<div style="height:auto;">
+  <table>
+    <tr>
+      <td>CTI Panel</td>
+    </tr>
+    <tr>
+      <td>
+        <select id="ddCti" class="ddCtiGen" size="3" multiple="multiple"></select>
+      </td>
+    </tr>
+    <tr>
+      <td>{{descAdminLbl}}</td>
+    </tr>
+    <tr>
+      <td>
+        <select id="ddAdminM" class="ddAdminMGen" size="3" multiple="multiple"></select>
+      </td>
+    </tr>
+    <tr>
+      <td>{{descAgentLbl}}</td>
+    </tr>
+    <tr>
+      <td>
+        <select id="ddAgentM" class="ddAgentMGen" size="3" multiple="multiple"></select>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="#" id="lnkSettings" class="lnk-gen-admin-settings">Submit</a>&nbsp;
+        <span id="spSettings" class="sp-gen-admin-settings">Saving...</span>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="divCred" class="modal hide fade div-gen-cred" tabindex="-1" role="dialog" aria-labelledby="divCredLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="divCredLabel">Authentication</h3>
+  </div>
+  <div class="modal-body">
+    <table border="0" id="tblDivCred" class="tbl-gen-divcred">
+      <tr>
+        <td>Login id</td>
+        <td>
+          <input type="text" id="txtLoginId" class="inpt-cred txt-gen-loginid" disabled="disabled" value="{{email}}" />
+          <a href="#" id="lnkLoginIdChange" class="lnk-gen-loginidchange">Change</a>
+        </td>
+      </tr>
+      <tr>
+        <td>Password</td>
+        <td>
+          <input type="password" id="txtLoginSecret" class="inpt-cred txt-gen-loginsecret" />
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div class="modal-footer">
+    <a class="btn" data-dismiss="modal" aria-hidden="true">Cancel</a>
+    <a class="btn btn-success lnk-gen-loginsubmit" id="lnkLoginSubmit">Submit</a>
+  </div>
+</div>
+

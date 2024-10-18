@@ -1,0 +1,25 @@
+<div>
+  {{#if isLoggedIn}}
+      <form>
+          <fieldset>
+              <ul>
+              {{#each phones}}
+                  <li>
+                      <a class="click-to-dial">{{number}}</a>
+                      <span style="color:#999"> - {{label}}</span>
+                  </li>
+               {{/each}}
+              </ul>
+          </fieldset>
+      </form>
+  {{else}}
+      <div class="alert">
+          <strong>Warning!</strong>
+          You need to login into CRM Workspace first to enable Click to Dial.
+      </div>
+
+  {{/if}}
+  <div>
+    <span class="ctd-cti-error">Please activate the CTI Panel first!</span>
+  </div>
+</div>

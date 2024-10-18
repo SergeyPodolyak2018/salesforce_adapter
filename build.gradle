@@ -1,0 +1,39 @@
+plugins {
+  id "com.moowork.grunt" version "1.1.1"
+  id "com.moowork.node" version "1.1.1"
+}
+
+description = "CRM Workspace"
+
+apply plugin: "com.moowork.grunt"
+apply plugin: "com.moowork.node"
+
+task updateDependencies() {
+}
+updateDependencies.dependsOn = ["npm_install", "installGrunt"]
+
+task gruntBuild(type: GruntTask) {
+    dependsOn updateDependencies
+    group "Build"
+    description "Build"
+    args = ["--buildVersion=${version}", "--mercurialChangeset=${System.getenv("BUILD_CHANGESET_ID")}"]
+}
+
+task updatePackageVersion(type: GruntTask, dependsOn: ["npm_install"] ) {
+    args = ["package", "--packageVersion=${project.ext.semanticVersion}"]
+}
+
+task test {
+    dependsOn "grunt_test"
+}
+
+build.dependsOn = ["gruntBuild", "test"]
+grunt_test.dependsOn = ["npm_install"]
+grunt_integration.dependsOn = ["npm_install"]
+
+
+npm_install {
+    args = ["--userconfig=.npmrc"]
+}
+
+npm_publish.dependsOn = ["updatePackageVersion"]

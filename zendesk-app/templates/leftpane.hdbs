@@ -1,0 +1,8 @@
+<div style="height:auto;">
+  {{#if isDefaultUrl}}
+    <iframe id="frameWS" class="frame-genesys-ws" src="{{defaultUrl}}" seamless="seamless"></iframe>
+  {{else}}
+    <div class="search-result"></div>
+  {{/if}}
+</div>
+          

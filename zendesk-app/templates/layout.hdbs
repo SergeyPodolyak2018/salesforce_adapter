@@ -1,0 +1,6 @@
+<header>
+  <h1 id="h1WS" class="h1-genesys-ws"></h1>
+  <h1 id="h1PM" class="h1-genesys-pm"></h1>
+  <input type="hidden" id="hdGenesysAppId" class="hd-genesys-app-id" />
+</header>
+<section data-main></section>

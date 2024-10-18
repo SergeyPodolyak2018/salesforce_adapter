@@ -1,0 +1,33 @@
+{
+  "app": {
+    "package": "genesys_cti_app",
+    "parameters": {
+
+      "crm_height" : { "label": { "value": "Adapter Height", "title": "Genesys CTI Panel Initial Height." }},
+      "crm_width"  : { "label": { "value": "Adapter Width",  "title": "Genesys CTI Panel Initial Width." }},
+      "cti_url" : { "label": { "value": "CTI Url", "title": "Genesys CTI Panel Url." }},
+	  "agent_monitor_url": { "label": { "value": "Agent Monitor URL", "title": "Agent Monitor URL" }},
+	  "admin_monitor_url": { "label": { "value": "Admin Monitor URL", "title": "Admin Monitor URL" }},
+	  "center_name": { "label": { "value": "Center Name", "title": "Center Name" }},
+	  "server_url": { "label": { "value": "Server URL", "title": "Server URL" }},
+	  "agent_login_timeout": { "label": { "value": "Agent Login Timeout", "title": "Agent Login Timeout" }},
+	  "failover_pooling_interval": { "label": { "value": "Failover Pooling Interval", "title": "Failover Pooling Interval" }},
+	  "local_logging": { "label": { "value": "Local Logging", "title": "Local Logging popup opens to show the browser logs" }},
+	  "confirm_agent_transfers": { "label": { "value": "Confirm Agent Transfers", "title": "Confirm Agent Transfers" }},
+	  "agent_wrapup_time": { "label": { "value": "Agent Wrapup Time", "title": "Agent Wrapup Time" }},
+	  "win_refresh" : { "label": { "value": "Window Refresh", "title": "Refresh window after ticket insert/update." }},
+	  "auto_create_ticket" : { "label": { "value": "Auto Create Outbound Ticket", "title": "Automatically Create Ticket on call wrapup if current window is not a ticket" }},
+	  "search_customer" : { "label": { "value": "Search Customer", "title": "Customer records would be search on incoming call" }},
+	  "search_ticket" : { "label": { "value": "Search Ticket", "title": "Ticket records would be search on incoming call" }},
+	  "search_organization" : { "label": { "value": "Search Organization", "title": "Organization records would be search on incoming call" }},
+	  "ticket_phone_id" : { "label": { "value": "Ticket Phone Id", "title": "Phone Id of custom phone fields" }},
+	  "perm_cti_panel": { "label": { "value": "CTI Panel Permission", "title": "CTI Panel Permission" }},
+	  "perm_agent_monitor": { "label": { "value": "Agent Desktop Permission", "title": "Agent Desktop Permission" }},
+	  "perm_admin_monitor": { "label": { "value": "VCC Dashboard Permission", "title": "VCC Dashboard Permission" }},
+	  "disable_call_activity": { "label": { "value": "Disable Call Activity", "title": "Disable Call Activity" }}
+	}
+  },
+  "desc": { "value": "", "title": "" },
+  "descAgentMonitor": { "value": "Agent Desktop", "title": "Agent Desktop" },
+  "descAdminMonitor": { "value": "VCC Dashboard", "title": "VCC Dashboard" }
+}

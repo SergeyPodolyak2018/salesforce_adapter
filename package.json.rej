@@ -1,0 +1,9 @@
+--- package.json
++++ package.json
+@@ -48,4 +48,4 @@
+     "type": "mercurial",
+     "url": "https://hg.gws.genesys.com/hgweb.cgi/gws-microservices/"
+   }
+-}
++}
+\ No newline at end of file

@@ -1,0 +1,69 @@
+@import 'src/less/lib/lesshat';
+
+.not-in-console {
+  background: url('resources/logo.png') white no-repeat;
+  background-position: center center;
+  width: 200px;
+  height: 400px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  display: none;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.not-in-console-title {
+  text-align: center;
+  position: absolute;
+  top: 225px;
+}
+
+.wwe .main_body .wwe-toaster {
+  position: absolute;
+}
+
+.wwe .main_body .wwe-case-interactions-table {
+  height: calc(~"100% - 2.5rem");
+}
+
+#authLoginContainer {
+  width: 100%;
+  height: 100%;
+}
+
+#myCustomWaiting {
+  display: block;
+  border-style: none;
+  outline: none;
+  position: absolute;
+  top: calc(50% - 25px);
+  left: calc(50% - 25px);
+  z-index: 1060;
+
+  &:before {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 4px solid #00A1E0;
+    border-top-color: #D8D8D8;
+    animation: spinner 1.2s linear infinite;
+  }
+}
+
+@keyframes spinner {
+  to {transform: rotate(360deg);}
+}
